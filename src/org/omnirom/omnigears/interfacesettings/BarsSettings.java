@@ -38,6 +38,7 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
 import com.android.internal.util.omni.DeviceUtils;
+import com.android.settings.Utils;
 
 public class BarsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -107,7 +108,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mSmartPulldown = (ListPreference) findPreference(SMART_PULLDOWN);
 
-        if (DeviceUtils.isPhone(getActivity())) {
+        if (Utils.isPhone(getActivity())) {
             int quickPulldown = Settings.System.getInt(resolver,
                     Settings.System.QS_QUICK_PULLDOWN, 0);
             mQuickPulldown.setValue(String.valueOf(quickPulldown));
@@ -168,10 +169,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(findPreference(NETWORK_TRAFFIC_PERIOD));
         }
 
-        boolean hasNavBar = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        // Also check, if users without navigation bar force enabled it.
-        hasNavBar = hasNavBar || (SystemProperties.getInt("qemu.hw.mainkeys", 1) == 0);
+        boolean hasNavBar = DeviceUtils.deviceSupportNavigationBar(getActivity());
 
         // Hide navigation bar category on devices without navigation bar
         if (!hasNavBar) {

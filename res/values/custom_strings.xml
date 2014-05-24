@@ -118,7 +118,6 @@
     <string name="screen_auto_brighness_summary">Screen brightness levels for automatic mode</string>
     <string name="button_auto_brightness">Automatic levels</string>
     <string name="button_auto_brighness_summary">Button brightness levels for automatic mode</string>
-    <string name="button_brightness_category">Buttons</string>
     <string name="button_no_brightness">Dark mode</string>
     <string name="button_no_brightness_summary">Don\'t set button brightness</string>
     <string name="button_link_brightness">Link to screen</string>
@@ -149,6 +148,8 @@
     <string name="sensor_category">Sensor</string>
     <string name="button_timeout_title">Timeout</string>
     <string name="button_timeout_summary">Disabled on value 0</string>
+    <string name="button_brightness_title">Button brightness</string>
+    <string name="button_brightness_summary">Button brightness settings</string>
 
     <!-- button settings -->
     <string name="button_volume_keys_title">Volume</string>
@@ -218,6 +219,10 @@
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
     <string name="virtual_key_haptic_feedback_title">Vibrate on touch</string>
     <string name="virtual_key_haptic_feedback_summary">Enable depends on \"Vibrate on touch\" in sound settings</string>
+    <string name="navigation_bar_show_title">Show navigation bar</string>
+    <string name="navigation_bar_show_summary">Force enable navigation bar</string>
+    <string name="hardware_keys_disable_title">Disable keys</string>
+    <string name="hardware_keys_disable_summary">Force disable keys</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
@@ -342,6 +347,7 @@
 
     <!-- Navigation Bar customization-->
     <string name="navigation_bar_title">Buttons and layout</string>
+    <string name="navigation_bar_summary">Configure navigation bar buttons</string>
     <string name="navigation_bar_help_text">1 - To begin editing, tap the lock icon\n\n2 - Tap any button to assign or change functionality\n\n3 - Long press any button to rearrange the order\n\n4 - To save, tap the lock icon again\n\n5 - To restore system default, tap the reset button\n\n</string>
     <string name="navigation_bar_tips">\u2022 Actions can only be assigned to one button at a time\n\n\u2022 The home button cannot be re-assigned\n\n\u2022 Side buttons cannot be rearranged</string>
     <string name="navigation_bar_tips_title">Quick tips</string>
@@ -353,6 +359,7 @@
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Quick launch shortcuts</string>
+    <string name="navigation_ring_summary">Configure custom navigation bar shortcuts</string>
     <string name="navring_target_reset_message">Delete all user created navigation bar shortcuts and restore to default?</string>
     <string name="navring_target_reset">Navigation bar shortcuts reset to default</string>
     <string name="navring_action_open_ime_switcher">Open IME Switcher</string>
@@ -526,6 +533,7 @@
 
     <!-- Navigation bar height/width -->
     <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimen_summary">Configure width and height of navigation bar</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
     <string name="navigation_bar_height_summary">Navigation bar height while in portrait.</string>
@@ -549,4 +557,5 @@
     <string name="calendar_shortcut_title">Date</string>
     <string name="default_shortcut">Default</string>
 
+    <string name="color_picker_dialog_title">Color</string>
 </resources>
