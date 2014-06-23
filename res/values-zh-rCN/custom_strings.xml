@@ -450,9 +450,9 @@
 
     <!-- Sound themes -->
     <string name="sound_packages_title">选择声音包</string>
-    <string name="install_sound_pack_title">Install sound pack</string>
-    <string name="install_sound_pack_summary">Install new sound packs added in SoundPacks folder on the internal storage</string>
-    <string name="select_sound_pack_title">Select sound pack</string>
+    <string name="install_sound_pack_title">安装声音包</string>
+    <string name="install_sound_pack_summary">安装新的声音包到SoundPacks</string>
+    <string name="select_sound_pack_title">选择声音包</string>
     <string name="select_sound_pack_summary">选择有效的声音包</string>
     <string name="default_sound_pack">默认(系统)</string>
     <string name="error_pack_install">铃音包安装错误</string>
@@ -527,6 +527,8 @@
     <string name="see_through_summary">可能会看到您的屏幕内容</string>
     <string name="blur_radius_title">模糊化</string>
     <string name="blur_radius_summary">模糊效果强度</string>
+    <string name="lockscreen_wallpaper">壁纸</string>
+    <string name="lockscreen_wallpaper_disabled">透明效果时被禁用</string>
 
     <!-- Navigation bar height/width -->
     <string name="navbar_dimen_title">导航栏高度</string>
