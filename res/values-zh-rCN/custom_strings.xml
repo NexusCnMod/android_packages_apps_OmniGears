@@ -554,4 +554,18 @@
     <string name="calendar_shortcut_title">日期</string>
     <string name="default_shortcut">默认</string>
 
+    <string name="color_picker_dialog_title">颜色</string>
+
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">交换音量按键</string>
+    <string name="swap_volume_buttons_summary">当屏幕旋转后交换音量大小控制</string>
+    <string name="swap_volume_advanced_settings_title">高级旋转控制</string>
+    <string name="swap_volume_advanced_settings_close">取消</string>
+    <string name="swap_volume_disabled_90_title">90°时禁用</string>
+    <string name="swap_volume_disabled_270_title">270°时禁用</string>
+
+   <!-- Lockscreen immersive mode -->
+   <string name="category_immersive_mode_title">沉浸模式</string>
+   <string name="lockscreen_immersive_mode_title">禁用沉浸模式</string>
+
 </resources>
