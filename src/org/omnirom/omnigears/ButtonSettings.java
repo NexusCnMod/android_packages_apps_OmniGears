@@ -168,7 +168,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mVolumeWake = (CheckBoxPreference) findPreference(BUTTON_VOLUME_WAKE);
             mVolumeDefault = (ListPreference) findPreference(BUTTON_VOLUME_DEFAULT);
             if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
-                prefScreen.removePreference(mVolumeWake);
+                volumeCategory.removePreference(mVolumeWake);
             } else {
                 mVolumeWake.setChecked(Settings.System.getInt(resolver,
                     Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
@@ -283,7 +283,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 mBackLongPressAction.setValue(Integer.toString(backLongPressAction));
                 mBackLongPressAction.setSummary(mBackLongPressAction.getEntry());
                 mBackLongPressAction.setOnPreferenceChangeListener(this);
-                
+
                 mKeySettings.put(Settings.System.KEY_BACK_LONG_PRESS_ACTION, backLongPressAction);
             } else {
                 prefScreen.removePreference(mKeysBackCategory);
@@ -349,7 +349,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 mMenuPressAction.setOnPreferenceChangeListener(this);
 
                 mKeySettings.put(Settings.System.KEY_MENU_ACTION, menuPressAction);
-        
+
                 int menuLongPressAction = ACTION_NOTHING;
                 if (!hasAssistKey) {
                     menuLongPressAction = ACTION_SEARCH;
@@ -624,7 +624,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private boolean hasVolumeRocker() {
         return getActivity().getResources().getBoolean(R.bool.config_has_volume_rocker);
     }
-    
+
     private boolean hasHomeKey() {
         Iterator<Integer> nextAction = mKeySettings.values().iterator();
         while (nextAction.hasNext()){
